@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    color:white;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    padding: 5px;
+
+
+}
+.box
+{
+    width: 80%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+header div{
+    display: inline-flex;
+    gap: 5px;
+}
+header a{
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-image: url(./profile_picture.png) 20 repeat;
+}
+a:link,a:visited,a:active,.content,.about,.skill{
+    color: white;
+}
+a:hover{
+    color: gray;
+}
+
+.contact
+{
+    float: right;
+}

@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    list-style-type: none;
+}
+@media screen and (max-width:600px) {
+    .skills ul{
+        flex-direction: column;
+    }
+    
+}
+body{
+    margin: 5px 15px;   
+}
+.nav>ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.box{
+    text-align: center;
+    padding:100px;
+    background-image: linear-gradient( 90.2deg,  rgba(1,47,95,1) -0.4%, rgba(56,141,217,1) 106.1% );
+    border-radius: 20px;
+}
+.box>p,h1{
+    background-color: transparent;
+}
+.skills>ul{
+    display: flex;
+    flex-direction: row;
+}
+.skills>ul>li{
+    background-image: linear-gradient( 90.2deg,  rgba(1,47,95,1) -0.4%, rgba(56,141,217,1) 106.1% );
+    padding: 10px;
+    flex:33%;
+    border-radius: 10px;
+}

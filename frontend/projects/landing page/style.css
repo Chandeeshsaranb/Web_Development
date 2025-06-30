@@ -1,0 +1,269 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,97,255,1) 0%, rgba(96,239,255,1) 100.7% );
+    padding: 100px;
+    color: white;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+header ul>li>a{
+    text-decoration: none;
+    margin: 0px 10px;
+    color: black;
+    padding:10px 30px;
+    background-color: white;
+    border-radius: 7px;
+    font-size: 20px;
+    border: 1px solid grey;
+}
+header h1{
+    font-size: 70px;
+}
+header p{
+    font-size: 25px;
+}
+header ul>li>a:hover{
+    box-shadow: 1px 1px 4px black;
+}
+.plans{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.box{
+    width: 27%;
+    padding: 70px 20px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px grey;
+    margin:5px;
+}
+footer{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+.box ul{
+    margin-left: 30%;
+}
+@media only screen and (max-width:600px){
+    body{
+        margin: 3px 10px;
+    }
+    header h1{
+        font-size: 40px;
+    }
+    header p{
+        font-size: medium;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    header ul li{
+        margin-bottom: 30px;
+    }
+    header{
+        padding: 60px;
+    }
+    .plans{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box{
+        width: 100% ;
+        margin:10px 5px;
+
+    }
+    .box ul{
+        margin-left: 20%;
+        font-size: 20px;
+    }
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+@media only screen and (min-width:600px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        margin: 3px 10px;
+    }
+    header h1{
+        font-size: 40px;
+    }
+    header p{
+        font-size: medium;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    header ul li{
+        margin-bottom: 30px;
+    }
+    header{
+        padding: 60px;
+    }
+    .plans{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .plans .title{
+        font-size: medium;
+        font-weight: bolder;
+    }
+    .plans li{
+        font-size: small;
+    }
+    .box{
+        width: 40% ;
+        margin:10px 5px;
+
+    }
+    .box ul{
+        margin-left: 20%;
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:768px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    header h1{
+        font-size: 40px;
+    }
+    header p{
+        font-size: medium;
+    }
+    header ul{
+        flex-direction: row;
+    }
+    header ul li{
+        margin-bottom: 30px;
+    }
+    header{
+        padding: 60px;
+    }
+    .plans{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .plans .title{
+        font-size: large;
+        font-weight: bolder;
+    }
+    .plans li{
+        font-size: medium;
+    }
+    .box{
+        width: 40% ;
+        margin:10px 5px;
+
+    }
+    .box ul{
+        margin-left: 20%;
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:992px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    header h1{
+        font-size: 50px;
+    }
+    header p{
+        font-size:20px;
+    }
+    header ul{
+        flex-direction: row;
+    }
+    header ul li{
+        margin-bottom: 30px;
+    }
+    header{
+        padding: 60px;
+    }
+    .plans{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .plans .title{
+        font-size: larger;
+        font-weight: bolder;
+    }
+    .plans li{
+        font-size: medium;
+    }
+    .box{
+        width: 30% ;
+        margin:10px 5px;
+        padding: 20px 10px;
+
+    }
+    .box ul{
+        margin-left: 20%;
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:1200px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    header h1{
+        font-size: 70px;
+    }
+    header p{
+        font-size: 30px;
+    }
+    header ul{
+        flex-direction: row;
+    }
+    header ul li{
+        margin-bottom: 30px;
+    }
+    header{
+        padding: 60px;
+    }
+    .plans{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .plans .title{
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .plans li{
+        font-size: medium;
+    }
+    .box{
+        width: 30% ;
+        margin:10px 5px;
+        padding: 65px 15px;
+
+    }
+    .box ul{
+        margin-left: 25%;
+        font-size: 20px;
+    }
+}

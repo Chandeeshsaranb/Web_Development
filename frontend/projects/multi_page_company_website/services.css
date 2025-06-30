@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0px 40px;
+    background-color: rgb(37, 37, 48);
+}
+.body{
+    height: 90vh;
+    background-image: url(./images/background1.avif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    z-index: -2;
+}
+.body::before{
+    background-color: rgba(0,0,0,0.8);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+header ul a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 0px;
+}
+.name{
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+}
+header ul a:hover{
+    border: 3px solid white;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+}
+.services{
+    z-index: 0;
+    padding: 0px 25%;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    z-index:0;
+    width: 35%;
+    padding: 110px 5px;
+    margin: 10px;
+    background-color: rgb(93, 92, 90);
+    text-align: center;
+    border-radius: 20px;
+}

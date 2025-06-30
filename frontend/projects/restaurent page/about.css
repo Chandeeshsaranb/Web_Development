@@ -1,0 +1,72 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(./images/background_final.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+body::before{
+    position: absolute;
+    content: "";
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+    height: 10vh;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+header .nav ul li{
+    margin: 0px 10px;
+}
+header ul li a{
+    margin: 0px 5px;
+}
+header .nav ul li a:hover{
+    border: 5px solid orangered;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-right: 170px;
+}
+.prebook ul li a{
+    border: 3px solid orangered;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: orangered;
+}
+.content{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

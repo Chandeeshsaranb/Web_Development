@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    text-align: center;
+    font-size: 70px;
+    padding: 30px 0px;
+    background-color: grey;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    flex: 13%;
+    background-color: aliceblue;
+}
+.main_content{
+    flex:87%;
+    background-color: aquamarine;
+}
+.shoes{
+    display: flex;
+    flex-direction: row;    
+}
+.image{
+    flex: 30%;
+}
+.desc{
+    flex: 50%;
+}
+.buy{
+    flex: 20%;
+}
+.main_content{
+    height: 80vh;
+}
+.sidebar{
+    margin-left: 5vh;
+    padding-top: 20px;
+}
+@media only screen and (max-width:600px)
+{
+    .content{
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .filter{
+        display: flex;
+        flex-direction: row;
+        gap: 3vh;
+    }
+    .sidebar{
+        margin-left: 3vh;
+    }
+    .main_content{
+        height: 100vh;
+    }
+    iframe{
+        height: 64vh;
+    }
+}
