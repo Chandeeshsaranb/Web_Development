@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Habit Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="streak">
+                Streak: <span id="streakCount"></span>
+            </div>
+
+            <div class="maxStreak">
+                MaxStreak: <span id="maxStreakCount">0</span>
+            </div>
+            
+            <div class="day">
+                Day: <span id="dayCount"></span>
+            </div>
+        </header>
+
+        <table>
+            <tr>
+                <th><input type="checkbox" id="habit1" onclick="countStreak()"></th>
+                <td><label for="habit1"><p id="hab1">WALK 5 KILOMETERS</p></label></td>
+                <td><button id="edit" onclick="editHabit1()">Edit</button></td>
+            </tr>
+
+            <tr>
+                <th><input type="checkbox" id="habit2" onclick="countStreak()"></th>
+                <td><label for="habit2"><p id="hab2">DRINK 5L OF WATER</p></label></td>
+                <td><button id="edit" onclick="editHabit2()">Edit</button></td>
+            </tr>
+
+            <tr>
+                <th><input type="checkbox" id="habit3" onclick="countStreak()"></th>
+                <td><label for="habit3"><p id="hab3">READ 5 PAGES OF A BOOK</p></label></td>
+                <td><button id="edit" onclick="editHabit2()">Edit</button></td>
+            </tr>
+
+            <tr>
+                <th><input type="checkbox" id="habit4" onclick="countStreak()"></th>
+                <td><label for="habit4"><p id="hab4">LEARN NEW SKILL</p></label></td>
+                <td><button id="edit" onclick="editHabit4()">Edit</button></td>
+            </tr>
+
+            <tr>
+                <th><input type="checkbox" id="habit5" onclick="countStreak()"></th>
+                <td><label for="habit5"><p id="hab5">STUDY FOR 2 HOURS</p></label></td>
+                <td><button id="edit" onclick="editHabit5()">Edit</button></td>
+            </tr>
+
+        </table>
+
+        <button id="updateButton" onclick="updateCounts()">Update</button>
+    </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

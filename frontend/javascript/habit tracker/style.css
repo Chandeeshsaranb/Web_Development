@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: inter;
+}
+
+body{
+    display: flex;
+    flex-direction:row ;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    justify-content: space-between;
+    padding: 50px;
+    box-shadow: 2px 2px 15px 3px black;
+    border-radius: 10px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+tr,td,th{
+    padding-bottom: 10px;
+}
+input{
+    transform: scale(1.8);
+    margin-right: 10px;
+}
+#edit{
+    margin-left: 10px;
+    padding: 4px 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 15px;
+}
+#edit:hover{
+     box-shadow: 1px 1px 7px 1px black;
+}
+p{
+    user-select: none;
+    font-weight: bold;
+}
+#updateButton{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0px solid black;
+    box-shadow: 1px 1px 7px 2px black;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#updateButton:hover{
+    
+}
+header div{
+    font-size: 20px;
+    font-weight: bolder;
+}
