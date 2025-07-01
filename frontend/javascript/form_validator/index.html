@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form Validator</title>
+</head>
+<body>
+    <div id="form_container">
+        <form action="./form.html">
+            <h1>SIGN UP</h1>
+            <!-- <label for="username">Username: 
+                <input type="text" id="nameInput">
+            </label>
+
+            <label for="email">
+                E-Mail:
+                <input type="email" id="emailInput">
+            </label>
+
+            <label for="password">
+                Password: 
+                <input type="password">
+            </label>
+
+            <div>
+            <input type="checkbox">
+            <label for="showpass">
+                show password
+            </label>
+            </div> -->
+
+            <table>
+                <tr>
+                    <th>Username:</th>
+                    <td><input type="text" id="nameInput"></td>
+                </tr>
+
+                <tr>
+                    <th>E-Mail:</th>
+                    <td><input type="email" id="mailInput" onchange="expCheck()"></td>
+                    <br>
+                    <p id="mailWarning" style="color: red;"></p>
+                </tr>
+
+                <tr>
+                    <th>Password:</th>
+                    <td><input type="password" id="passInput"></td>
+                </tr>
+
+                <tr>
+                    <th></th>
+                    <td><input type="checkbox" id="passToggle" onclick="Toggle()"> <label for="passToggle">Show Password</label> </td>
+                </tr>
+            </table>
+
+            <button id="signupButton">Sign Up</button>
+
+        </form>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
