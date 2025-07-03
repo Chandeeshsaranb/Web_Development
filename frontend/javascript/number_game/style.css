@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+html{
+  font-family: Poppins;
+  color: #f0f0f0;
+}
+body{
+  min-height: 100vh;
+  background: #0b0d15;
+  color: #ffffff;
+  align-content: center;
+}
+h1{
+  color: white;
+}
+
+.default{
+  margin: 0 auto;
+  padding: 40px;
+  width: 350px;
+  font-size: 25px;
+  background: #1c1f2b;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+.card{
+  margin: 0 auto;
+  padding: 40px;
+  width: 350px;
+  font-size: 25px;
+  background: #1c1f2b;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card1{
+  margin: 0 auto;
+  padding: 40px;
+  width: 350px;
+  font-size: 25px;
+  background: #1c1f2b;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after, .card::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.card::before{
+  filter: blur(1.8rem);
+  opacity: 0.9;
+}
+
+
+.card1::after, .card1::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), red);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.card1::before{
+  filter: blur(1.9rem);
+  opacity: 0.9;
+}
+
+
+
+.default::after, .default::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle),white);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.card::default{
+  filter: blur(1.2rem);
+  opacity: 0.6;
+}
+
+
+
+
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+
+
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#validation{
+    color: red;
+}
+input{
+    width: 60px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50px;
+}
+button{
+    padding:10px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.computer{
+    display: flex;
+    flex-direction: column;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

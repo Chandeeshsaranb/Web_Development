@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Number Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="default" id="container">
+     <div class="user">
+            <label for="userInput">Enter a Number from 1 to 10:</label>
+            <br>
+            <input type="number" id="userInput" oninput="validateInput()">
+            <br>
+            <p id="validation"></p>
+            <br>
+            <button id="button" onclick="gameDetails()">Begin</button>
+            <br>
+        </div>
+        <div class="computer">
+            <p id="user"></p>
+            <br>
+            <p id="computer"></p>
+            <br>
+            <p id="result"></p>
+        </div>
+  </div>
+
+
+
+   <script>
+
+        function validateInput(){
+            let num=document.getElementById("userInput").value
+            let btn=document.getElementById("button")
+            
+            if(num>0 && num<11){
+                document.getElementById("validation").innerHTML=""
+                btn.disabled=false
+            }
+            else{
+                document.getElementById("validation").innerHTML="*Invalid Input"
+                btn.disabled=true
+
+            }
+
+        }
+
+        function gameDetails(){
+            let num=document.getElementById("userInput").value
+            let btn=document.getElementById("button")
+            let some=document.getElementById("container")
+            let clas=some.className
+            if(num===''){
+                document.getElementById("validation").innerHTML="*please enter a number first"
+            }
+            else{
+            let user=document.getElementById("userInput")
+            let random=Math.random()
+            let roundString=random.toFixed(1);
+            let round=parseFloat(roundString)
+            let computer=0
+            switch(round){
+               case 0.1:
+                computer=1;
+                break;
+
+                case 0.2:
+                computer=2;
+                break;
+
+                case 0.3:
+                computer=3;
+                break;
+
+                case 0.4:
+                computer=4;
+                break;
+
+                case 0.5:
+                computer=5;
+                break;
+
+                case 0.6:
+                computer=6;
+                break;
+                case 0.7:
+                computer=7;
+                break;
+                case 0.8:
+                computer=8;
+                break;
+                case 0.9:
+                computer=9;
+                break;
+                case 0.0:
+                computer=10;
+                break;
+            }
+        
+            document.getElementById("user").innerHTML='<i class="fa-solid fa-user"></i>' + "<span>    </span>" + ": " + user.value
+            document.getElementById("computer").innerHTML='<i class="fa-solid fa-desktop"></i> <span>   </span>' + ":   "+ computer
+            if(user.value==computer){
+                document.getElementById("result").innerHTML="You Won!"
+                if(clas=="card"){
+                    return
+                }
+                else{
+                    some.classList.remove(clas)
+                    some.classList.add("card")
+                }
+            }
+            else{
+                document.getElementById("result").innerHTML="You Lose!"
+                document.getElementById("container").classList.replace("clas","card1")
+                if(clas=="card1"){
+                    return
+                }
+                else{
+                    some.classList.remove(clas)
+                    some.classList.add("card1")
+                }
+            }
+        }
+    }
+    </script>
+</body>
+</html>
