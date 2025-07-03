@@ -9,28 +9,36 @@
 
 body{
     display: flex;
-    flex-direction:row ;
+    flex-direction:column ;
     height: 90vh;
     justify-content: center;
     align-items: center;
 }
 .container{
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 40vh;
+    height: 50vh;
     justify-content: space-between;
-    padding: 50px;
-    box-shadow: 2px 2px 15px 3px black;
-    border-radius: 10px;
+    padding: 0px 10px;
+    box-shadow: 2px 2px 15px 3px ;
+    border-radius: 20px;
 }
+
+
+
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    background-color: rgb(166, 38, 166);
+    padding: 40px 10px;
+    color: white;
+    border-radius: 20px;
+    
 }
 tr,td,th{
     padding-bottom: 10px;
@@ -45,9 +53,15 @@ input{
     border-radius: 5px;
     border: 1px solid grey;
     font-size: 15px;
+    background-color: rgb(166, 38, 166);
+    color: white;
 }
+
+
+
+
 #edit:hover{
-     box-shadow: 1px 1px 7px 1px black;
+     box-shadow: 1px 1px 7px 1px rgb(182, 77, 182);
 }
 p{
     user-select: none;
@@ -57,11 +71,43 @@ p{
     padding: 10px 20px;
     border-radius: 10px;
     border: 0px solid black;
-    box-shadow: 1px 1px 7px 2px black;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bolder;
+    margin-bottom: 30px;
+    background-color: rgb(205, 101, 21);
+    color: white;
+}
+#updateButton:hover{
+    box-shadow: 1px 1px 7px 2px rgb(195, 83, 9);
 }
 header div{
     font-size: 20px;
     font-weight: bolder;
 }
+
+
+input[type="checkbox"]{
+    accent-color: rgb(166, 38, 166);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

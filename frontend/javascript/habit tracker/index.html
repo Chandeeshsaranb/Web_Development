@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Habit Tracker</title>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="streak">
-                Streak: <span id="streakCount"></span>
+                <i class="fa-solid fa-fire-flame-curved"></i><span>  </span>: <span id="streakCount"></span>
             </div>
 
             <div class="maxStreak">
-                MaxStreak: <span id="maxStreakCount">0</span>
+                Max <i class="fa-solid fa-fire-flame-curved"></i><span>  </span>: <span id="maxStreakCount">0</span>
             </div>
             
             <div class="day">
-                Day: <span id="dayCount"></span>
+                Day <span>  </span>: <span id="dayCount"></span>
             </div>
         </header>
-
         <table>
             <tr>
                 <th><input type="checkbox" id="habit1" onclick="countStreak()"></th>
