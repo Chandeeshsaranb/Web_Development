@@ -1,0 +1,36 @@
+.board{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 7px;
+    max-width: 300px;
+    overflow: hidden;
+    max-height: 330px;
+    /* background-color: blue; */
+    flex-wrap: wrap;
+    background-color: black;
+
+}
+body{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.square{
+    width: 17px;
+    height: 17px;
+    border-radius: 5px;
+    transition: 2s ease;
+    background-color: rgb(67, 73, 66);
+    margin: 1px;
+}
+
+.square:hover{
+    transition-duration: 0s;
+}
