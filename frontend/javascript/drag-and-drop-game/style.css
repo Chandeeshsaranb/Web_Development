@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 50px;
+}
+
+#drop-area {
+  border: 2px dashed #ccc;
+  padding: 40px;
+  width: 300px;
+  margin: auto;
+  background: #fff;
+  cursor: pointer;
+}
+
+#drop-area.hover {
+  border-color: #333;
+  background-color: #f0f0f0;
+}
+
+#file-list {
+  margin-top: 20px;
+}
+
+#file-list p {
+  margin: 5px 0;
+}
