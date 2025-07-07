@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webapi</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button id="button" onclick="geoLocation()">locate me</button>
+
+    <script>
+        const loc=document.getElementById("demo")
+        function geoLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition)
+            }
+            else{
+                loc.innerHTML="your browser does not support geolocation"
+            }
+        }
+
+        function showPosition(position){
+            loc.innerHTML="lat: " + position.coords.latitude + "lon: " + position.coords.longitude
+        }
+    </script>
+</body>
+</html>
