@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    
+
+    <script>
+        //function to add 2 numbers
+        function add(n1,n2){
+            return Number(n1)+Number(n2);
+        }
+
+        let num1=prompt("enter num1")
+        let num2=prompt("enter num2")
+        console.log(add(num1,num2))
+
+
+        //return factorial of a number
+        function factorial(num){
+            if(num<2){
+                return num;
+            }
+            else{
+                return num * factorial(num-1)
+            }
+        }
+
+        let fact=prompt("enter a number")
+        console.log(factorial(fact))
+
+        //palindrome string
+        let string=prompt("enter any string")
+        string.toLocaleLowerCase()
+        let rev=""
+        for(let i=string.length-1;i>=0;i--){
+            rev+=string[i]
+        }
+        if(string==rev){
+            console.log("Palindrome");
+            
+        }
+        else{
+            console.log("not a palindrome");
+            
+        }
+
+        //convert celcius to fahrenheit and arrow function combined
+        let cel=prompt("enter the celcius value")
+        console.log(ctof(cel))
+        function ctof(n){
+            return ((n*9/5)+32)
+        }
+
+        //arrow function
+        let val=()=>{ return 23};
+        console.log(val())
+
+    </script>
+</body>
+</html>
