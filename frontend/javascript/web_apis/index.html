@@ -21,7 +21,11 @@
         }
 
         function showPosition(position){
-            loc.innerHTML="lat: " + position.coords.latitude + "lon: " + position.coords.longitude
+            loc.innerHTML="lat: " + position.coords.latitude + "<br>" + "lon: " + position.coords.longitude + "<br>"
+
+            + position.coords.accuracy + "<br>"
+
+            + position.timestamp
         }
     </script>
 </body>

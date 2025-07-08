@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+    justify-content: space-between;
+}
