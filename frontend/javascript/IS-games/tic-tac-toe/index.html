@@ -9,22 +9,43 @@
 </head>
 
 <body>
-    <div class="container">
-        <div id="1" onclick="drawBoard(1)"></div>
-        <div id="2" onclick="drawBoard(2)"></div>
-        <div id="3" onclick="drawBoard(3)"></div>
-        <div id="4" onclick="drawBoard(4)"></div>
-        <div id="5" onclick="drawBoard(5)"></div>
-        <div id="6" onclick="drawBoard(6)"></div>
-        <div id="7" onclick="drawBoard(7)"></div>
-        <div id="8" onclick="drawBoard(8)"></div>
-        <div id="9" onclick="drawBoard(9)"></div>
+
+    <div class="title">
+        <div class="title-content">
+            <p>Welcome to the game of TIC_TAC_TOE</p>
+            <p>Please read the following instructions</p>
+            <pre>
+            1. There are 2 users 'X' and 'O'
+            2. 'X' - plays first
+            3. 'O' - plays second
+            </pre>
+            <p>If you match 3 of your username consecutively <br> you WON!</p>
+        </div>
     </div>
 
-    <button onclick="window.location.reload()">RESET</button>
+
+    <div class="container-main">
+        <div class="container">
+            <div id="1" onclick="drawBoard(1)" class="box"></div>
+            <div id="2" onclick="drawBoard(2)" class="box"></div>
+            <div id="3" onclick="drawBoard(3)" class="box"></div>
+            <div id="4" onclick="drawBoard(4)" class="box"></div>
+            <div id="5" onclick="drawBoard(5)" class="box"></div>
+            <div id="6" onclick="drawBoard(6)" class="box"></div>
+            <div id="7" onclick="drawBoard(7)" class="box"></div>
+            <div id="8" onclick="drawBoard(8)" class="box"></div>
+            <div id="9" onclick="drawBoard(9)" class="box"></div>
+        </div>
+
+        <button onclick="window.location.reload()">RESET</button>
+    </div>
 
 
+    <div class="result">
 
+        <iframe id="iframe" src="" frameborder="0"></iframe>
+
+    </div>
 
 
     <script src="./script.js"></script>
