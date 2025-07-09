@@ -9,6 +9,7 @@ let flag=1;
 function drawBoard(n){
     if(flag){
     user=user1
+        
     document.getElementById(n).removeAttribute('onclick')
 }
 else{
