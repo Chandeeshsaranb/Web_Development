@@ -11,7 +11,7 @@ header{
 .body{
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 50vh;
     align-items: center;
     justify-content: center;
 }
@@ -32,3 +32,17 @@ header{
     height: 15vh;
     justify-content: space-between;
 }
+table{
+    margin-bottom: 20px;
+}
+td{
+    margin: 10px;
+    padding: 10px;
+}
+#userChoice,#computerChoice{
+    font-size: 35px;
+}
+/* tr td span{
+    display: none;
+} */
+

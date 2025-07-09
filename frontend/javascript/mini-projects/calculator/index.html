@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculatorFrame">
+        <div class="display">
+            <p id="display"></p>
+        </div>
+        <div class="buttons">
+            <button onclick="calculations(7)" class="cbutton">7</button>
+            <button onclick="calculations(8)" class="cbutton">8</button>
+            <button onclick="calculations(9)" class="cbutton">9</button>
+            <button onclick="calculations('+')" class="cbutton">+</button>
+            <button onclick="calculations(4)" class="cbutton">4</button>
+            <button onclick="calculations(5)" class="cbutton">5</button>
+            <button onclick="calculations(6)" class="cbutton">6</button>
+            <button onclick="calculations('-')" class="cbutton" style="padding: 17px;">-</button>
+            <button onclick="calculations(1)" class="cbutton">1</button>
+            <button onclick="calculations(2)" class="cbutton">2</button>
+            <button onclick="calculations(3)" class="cbutton">3</button>
+            <button onclick="calculations('*')" class="cbutton">*</button>
+            <button onclick="calculations('/')" class="cbutton" style="padding: 17px;">/</button>
+            <button onclick="calculations(0)" class="cbutton">0</button>
+            <button onclick="cclear()" class="cebutton" style="padding: 14px;">C</button>
+            <button onclick="answer()" id="equals" class="ebutton" style="padding: 15px;">=</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
