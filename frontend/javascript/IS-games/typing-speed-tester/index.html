@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>TYPING SPEED TESTER</title>
+</head>
+
+<body id="body">
+    <div class="quote" id="quote"></div>
+    <div>counter:<span id="counter"></span> words/min: <span id="totalWords"></span>
+    </div>
+    <textarea name="userInput" id="textarea"></textarea>
+    <div class="button-container">
+        <button id="startTest" onclick="start()">Start</button>
+
+        <button id="displayMode" onclick="toggleDisplay()">Dark mode</button>
+
+        <button id="reset" onclick="window.location.reload()">Reset</button>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

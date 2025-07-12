@@ -81,9 +81,8 @@ function winnerCheck(){
             }
             break;
          }
-         else{
-            console.log("Draw!")
-         }
+         
     }
+    
 }
 

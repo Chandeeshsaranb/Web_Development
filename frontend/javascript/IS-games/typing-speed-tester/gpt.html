@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>60-Second Timer</title>
+</head>
+<body>
+
+  <h1 id="timer-display">60</h1>
+
+  <script>
+    let seconds = 60;
+    const timerDisplay = document.getElementById('timer-display');
+
+    const countdown = setInterval(() => {
+      seconds--;
+      timerDisplay.textContent = seconds;
+
+      if (seconds <= 0) {
+        clearInterval(countdown); // Stop the timer
+        timerDisplay.textContent = "Time's Up!";
+      }
+    }, 1000); // Update every 1000 milliseconds (1 second)
+  </script>
+
+</body>
+</html>
