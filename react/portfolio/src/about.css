@@ -1,0 +1,75 @@
+.about img {
+    width: 140px;
+    height: 140px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 70px;
+}
+
+.about .content{
+    content: "";
+    display: table;
+    clear: both;
+    line-height: 40px;
+}
+
+.about h1{
+    margin-bottom: 30px;
+}
+.project_image{
+    float: left;
+     width: 140px;
+    height: 140px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 70px;
+}
+.case{
+    padding: 15px 2px;
+    background-color: rgb(191, 159, 110);
+    border-radius: 10px;
+    text-decoration: none;
+}
+.img{
+     width: 140px;
+    height: 140px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 70px;
+}
+.project
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+
+}
+a:link,a:visited,a:active,.content,.about,.skill{
+    color: gainsboro;
+
+}
+a:hover{
+    color: gray;
+}
+.project p{
+    text-align: justify;
+    line-height: 40px;
+
+}
+
+#projects h1{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.project a{
+        
+    font-weight: bolder;
+}

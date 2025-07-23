@@ -11,9 +11,7 @@ header{
     top: 0px;
     padding:10px 0px;
 }
-a{
-    text-decoration: none;
-}
+
 header div{
     display: inline-flex;
     gap: 5px;
@@ -21,6 +19,9 @@ header div{
 header a{
     text-decoration: none;
     padding: 5px;
+}
+a{
+    text-decoration: none;
 }
 a:link,a:visited,a:active,.content,.about,.skill{
     color: white;
